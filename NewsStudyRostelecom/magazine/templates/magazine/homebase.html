@@ -1,6 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {% load static %}
+{% load bootstrap5 %}
+{%bootstrap_css%}
+{%bootstrap_javascript%}
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 <title>{% block title %} Главная страница {% endblock %}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,14 +15,87 @@
 <link rel="stylesheet" type="text/css" href="{% static 'magazine/css/style.css' %}" media="screen" />
 <link rel="stylesheet" type="text/css" href="{% static 'magazine/css/responsive.css' %}" media="screen" />
 <link rel="stylesheet" type="text/css" href="{% static 'magazine/css/jquery.bxslider.css' %}" media="screen" />
+<script src="https://kit.fontawesome.com/b91fb3443a.js"></script>
 
+<script type="text/javascript" src="{% static 'magazine/js/jquery-min.js' %}"></script>
+<script type="text/javascript" src="{% static 'magazine/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'magazine/js/jquery.bxslider.js' %}"></script>
+<script type="text/javascript" src="{% static 'magazine/js/selectnav.min.js' %}"></script>
+<script type="text/javascript">
+
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true
+    });
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+</script>
 {% block head %}{% endblock %}
 </head>
 <body style="background-color:#202020;">
 {% include 'magazine/header.html' %}
 {% block sidebar %} {% include 'magazine/sidebar.html' %} {% endblock %}
 {% block body %} {% include 'magazine/body.html' %} {% endblock %}
-{% block foot %} {% include 'magazine/foot.html' %} {% endblock %}
 
+{% block content %}
+<div class="content_center">
+Где?
+
+
+    <div class="row">
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox" style=" width:auto; height: 600px; !important;">
+                {% for article in articles %}
+                <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}">
+                    <div class="single_news">
+                        <div class="p-4 p-md-5 text-white rounded bg-dark">
+                            <div class="row">
+                                <div class="col-md-{% if article.image_set.all %}6{% else %}12 {% endif %} px-0">
+                                    <h1 class="display-4 fst-italic"> {{ article.title }}</h1>
+                                    <p class="lead my-3">{{ article.anouncement }}</p>
+                                    <p class="lead mb-0"><a href="{% url 'news_detail' article.pk %}"
+                                                            class="text-white fw-bold">Полный текст..</a></p>
+                                    <p><small>Просмотры: {{ article.get_views }}</small></p>
+                                    <a class="btn btn-success" href="{% url 'favorites' article.pk %}"><i
+                                            class="fa fa-bookmark">В избранное</i></a>
+                                </div>
+                                {% if article.image_set.all %}
+                                <div class="col-md-6 px-0">
+                                    <img src="{{ article.image_set.all.0.image.url }}"
+                                         style="width:100%; height:auto; border-radius:5px;">
+                                    <br>
+                                    <br>
+                                    <img src="{{ article.image_set.all.1.image.url }}"
+                                         style="width:100%; height:auto; border-radius:5px;">
+
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    {% endblock %}
+
+{% block foot %} {% include 'magazine/foot.html' %} {% endblock %}
 </body>
+
 </html>

@@ -1,39 +1,56 @@
 {% load static %}
 {% load bootstrap5 %}
-<div class="body_wrapper">
-  <div class="center">
- <!-- SLIDER -->
-    <div class="slider_area">
-      <div class="slider">
-        <ul class="bxslider">
-            <li>
-                <div class="image1">
-                    <a href="/news_1">
-                        <img src="{% static 'magazine/images/1.jpg' %}" alt="" title="Чемпионат по сёрфингу"/></a>
-                    </div>
-            </li>
-          <li>
-                <div class="image1">
-                    <a href="/news_1">
-                        <img src="{% static 'magazine/images/2.jpg' %}" alt="" title="Новый парк"/></a>
-                    </div>
-            </li>
-            <li>
-                <div class="image1">
-                    <a href="/news_1">
-                        <img src="{% static 'magazine/images/3.jpg' %}" alt="" title="Фестиваль удался"/></a>
-                    </div>
-            </li>
 
-        </ul>
-      </div>
-    </div>
-    <!-- /SLIDER -->
+<!--<div class="slider_area">-->
+<!--    <div class="content_area">-->
+<!--        <h2 class="title">ГЛАВНЫЕ НОВОСТИ</h2>-->
+<!--    </div>-->
+
+
+<!--    <div class="bxslider">-->
+<!--        <div><img src="https://i.pinimg.com/originals/2f/c8/09/2fc809f7b3ea1e7058af3cdb9db56f44.jpg" /></div>-->
+<!--        <div><img src="https://pichold.ru/wp-content/uploads/2018/12/Holidays_Christmas_402342.jpg" /></div>-->
+<!--        <div><img src="https://www.amperkin.ru/upload/iblock/2e5/0rb18petgkhrs10n51l7uqnar2m3xamd.jpg" /></div>-->
+<!--    </div>-->
 
 
 
 
-  </a>
+<!--    <br>-->
 
-  </div>
+
+<!--    <div class="content_area">-->
+<!--        <h6 class="title"></h6>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="slider_area">
+   <div class="content_area">
+       <h2 class="title">ФОТОГАЛЕРЕЯ</h2>
+   </div>
+   <div class="slider">
+       <ul class="bxslider">
+       {% for n in articles %}
+           {% if n.image_set.all %}
+           {% if n.status == True %}
+           <li>
+               <a href="{{ n.get_absolute_url }}">
+                   {% for image in n.image_set.all %}
+                   <img src="{{ image.image.url }}" style="margin:auto; height:350px; width:980px;" alt=""
+                        title="{{ n.title }}"/>
+                   {% endfor %}
+               </a>
+           </li>
+           {% endif %}
+           {% endif %}
+       {% endfor %}
+       </ul>
+   </div>
+   <br>
+   <div class="container"><a class="readmore" href="{% url 'news_index' %}"><input class="btn btn-danger" type="submit"
+                                                            value="К списку новостей"></a></div>
+   <div class="content_area">
+       <h6 class="title"></h6>
+   </div>
 </div>
