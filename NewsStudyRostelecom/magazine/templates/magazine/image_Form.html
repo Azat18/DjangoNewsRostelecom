@@ -1,0 +1,11 @@
+<h1> Форма для приёма изображений </h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Сохранить</button>
+</form>
+
+<br>
+<h1> Здесь появится изображение </h1>
+<img src="{{ model.image.url }}">

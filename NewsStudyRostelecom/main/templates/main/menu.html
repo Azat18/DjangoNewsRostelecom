@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel ="stylesheet" href = "{% static 'main/css/style.css' %}">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <script src="https://kit.fontawesome.com/54a4171cc9.js" crossorigin="anonymous"></script>
+
+
+    </head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" style="background-color:#7381ff">
+
+                <div class="row">
+                    <div class="col-md-1">
+                    <img width="50px" height="auto" src="https://cdn3.iconfinder.com/data/icons/basic-ui-elementssky-blue/177/list-1024.png" alt="Данные">
+                    </div>
+                    <div class="col-md-5">
+                    <h1>Меню</h1>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+
+                    <ul><i class="fa-solid fa-home"> </i><a href="/main"> Домой</a></ul>
+                    <ul><i class="fa-solid fa-home"> </i><a href="/main"> Новости</a></ul>
+                    <ul><i class="fa-solid fa-home"> </i><a href="/main"> Мой профиль</a></ul>
+                    <ul><i class="fa-solid fa-home"> </i><a href="/main"> Регистрация</a></ul>
+                    <ul><i class="fa-solid fa-home"> </i><a href="/main"> Вход в аккаунт</a></ul>
+
+                </div>
+
+                <div class="row">
+                    <li>
+                    <ul>
+                        <!--<i class="fa-solid fa-magazine"></i>-->
+                        <h2><a href="">Новости</a></h2>
+                    </ul>
+                </li>
+                </div>
+
+                <div class="row">
+                    <li>
+                    <ul>
+                        <!--<i class="fa-solid fa-magazine"></i>-->
+                        <h2><a href="">Мой профиль</a></h2>
+                    </ul>
+                </li>
+                </div>
+
+            <div class="row">
+                    <li>
+                    <ul>
+                        <!--<i class="fa-solid fa-magazine"></i>-->
+                        <h2><a href="">Регистрация</a></h2>
+                    </ul>
+                </li>
+                </div>
+
+
+
+
+
+
+                <div class="row">
+                    <li>
+                    <ul>
+                        <!--<i class="fa-solid fa-magazine"></i>-->
+                        <h2><a href="">Вход в аккаунт</a></h2>
+                    </ul>
+                </li>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-7">
+                <h1></h1>
+                <br>
+                <p></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

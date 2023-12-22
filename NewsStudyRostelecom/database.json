@@ -1,0 +1,2764 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-11-17T09:15:36.754Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Новость",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-11-17T12:26:44.579Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Пример",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-11-21T11:04:00.659Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Новость 1 от: 2023-11-21 11:03",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-11-21T17:04:00.839Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Заголовок 1 от: 2023-11-21",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-11-23T18:53:52.126Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Azat's account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-11-23T19:00:13.713Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "DemoUser",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-11-23T19:00:34.013Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "DemoUser",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-11-23T19:01:26.759Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Пользователь 1's account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-11-23T19:17:26.835Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Новость дня! от: 2023-11-23",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-11-24T05:31:22.548Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Crypto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-11-24T05:31:28.536Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "IT",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-11-24T05:31:35.633Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Наука",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-11-24T05:31:42.543Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Экономика",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-11-24T05:31:52.516Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Интересное",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-11-24T05:34:00.415Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Погода",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-11-24T05:41:08.171Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Новость дня! от: 2023-11-24",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-11-24T05:41:45.131Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Новость дня! от: 2023-11-24",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-11-24T05:48:55.782Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Новость дня! от: 2023-11-24",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-11-24T09:20:53.295Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Новость 1 от: 2023-11-24",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-11-26T17:27:05.892Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "Автор",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-11-26T17:27:32.688Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "News 1 от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-11-26T17:27:57.770Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "News 2 от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-11-26T17:28:18.408Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "News 3 от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-11-26T17:41:04.355Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "New от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-11-26T17:41:22.183Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "New 100 от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-11-26T17:41:39.135Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "New 1000 от: 2023-11-26",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-11-27T06:43:58.720Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Проверка пользовательского менеджера от: 2023-11-27",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-11-28T15:52:55.425Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "Новость 28.11 от: 2023-11-28",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-11-28T15:52:55.458Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "Новость 28.11 от: 2023-11-28",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-11-28T15:53:07.286Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Новость 28.11 от: 2023-11-28",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-12-01T06:49:29.436Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "Новость 01.12 от: 2023-12-01",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-12-02T14:56:23.584Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "21",
+    "object_repr": "Проверка слага вот от: 2023-12-02",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-12-03T08:59:53.942Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Проверка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-12-03T09:13:01.458Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Апельсин",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-12-03T09:13:29.166Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Новость",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-12-06T14:18:13.315Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Проверка от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"]}}, {\"added\": {\"name\": \"image\", \"object\": \"\\u0412\\u043e\\u0442\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-12-06T14:18:45.479Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Новость 30.11 от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"]}}, {\"added\": {\"name\": \"image\", \"object\": \"\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-12-06T14:41:16.528Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Crypto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-12-06T14:41:22.506Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "IT",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-12-06T14:41:27.630Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "IT",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-12-06T14:41:31.142Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Weather",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-12-06T15:31:07.261Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Проверка от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0441\\u0442\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-12-06T15:31:36.468Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Проверка от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0441\\u0442\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-12-06T15:32:19.862Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Проверка пользовательского менеджера от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0441\\u0442\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-12-06T15:32:48.988Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Проверка от: 2023-12-06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0441\\u0442\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-12-09T14:39:29.149Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Authors",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-12-10T08:14:58.793Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-12-10T08:18:01.152Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Azat's account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Account image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-12-10T08:19:52.077Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Azat's account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Birthday\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-12-10T08:20:07.014Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Nin's account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nickname\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-12-10T08:21:17.484Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-12-10T08:35:19.354Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Nin's account",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Address\", \"Vk\", \"Telegram\", \"Phone\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-12-10T11:42:28.983Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "22",
+    "object_repr": "Новость 06.12 от: 2023-12-06",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-12-10T11:42:28.998Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Проверка от: 2023-12-06",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.011Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Проверка пользовательского менеджера от: 2023-12-06",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.024Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Новость 30.11 от: 2023-12-06",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.038Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "21",
+    "object_repr": "Проверка слага вот от: 2023-12-02",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.050Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "Новость 01.12 от: 2023-12-01",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.065Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "Новость 28.11 от: 2023-11-28",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.079Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "New 100 от: 2023-11-26",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.094Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "New от: 2023-11-26",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.110Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "News 3 от: 2023-11-26",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.124Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "News 2 от: 2023-11-26",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.139Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Новость 1 от: 2023-11-24",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.151Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Новость дня! от: 2023-11-24",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.165Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Заголовок 1 от: 2023-11-21",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2023-12-10T11:42:29.177Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Заголовок 1 от: 2023-11-21",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2023-12-10T12:00:44.974Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Crypto",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2023-12-10T12:00:44.993Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Weather",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2023-12-10T12:01:02.783Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Личные финансы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2023-12-10T12:01:12.106Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Путешествия",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2023-12-10T12:01:56.223Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "Спорт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2023-12-10T12:02:13.184Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "Книги",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2023-12-10T12:02:34.692Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "Бизнесс",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2023-12-10T12:19:26.871Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "Новый парк от: 2023-12-10",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043d\\u043e\\u0432\\u043e\\u0441\\u0442\\u0438\", \"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\", \"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2023-12-10T12:27:23.058Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "Новый парк от: 2023-12-10",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2023-12-10T12:27:39.761Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "Чемпионат по сёрфингу от: 2023-12-10",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\", \"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2023-12-10T12:27:55.106Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "25",
+    "object_repr": "Фестиваль состоялся! от: 2023-12-10",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\", \"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2023-12-10T12:57:34.145Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "Новость Пипса от: 2023-12-10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2023-12-10T12:57:46.325Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "10",
+    "object_repr": "пипс",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2023-12-10T12:59:08.702Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "Pip's account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2023-12-10T13:37:46.009Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "12",
+    "object_repr": "N",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2023-12-11T14:22:36.709Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "27",
+    "object_repr": "Новость пипса от: 2023-12-10",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2023-12-12T13:13:09.882Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Moderation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2023-12-12T13:17:33.116Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "Readers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2023-12-13T04:56:45.420Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "7",
+    "object_repr": "FreshUser",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2023-12-13T11:27:41.469Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "FreshAuthor's account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2023-12-13T11:42:07.061Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "15",
+    "object_repr": "Reader",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2023-12-13T11:47:34.385Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "NewAuthor's account",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2023-12-13T12:32:50.600Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "18",
+    "object_repr": "Reader123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2023-12-14T10:26:44.972Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2023-12-16T12:34:31.664Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "22",
+    "object_repr": "User111",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add book",
+    "content_type": 7,
+    "codename": "add_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change book",
+    "content_type": 7,
+    "codename": "change_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete book",
+    "content_type": 7,
+    "codename": "delete_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view book",
+    "content_type": 7,
+    "codename": "view_book"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add demo",
+    "content_type": 8,
+    "codename": "add_demo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change demo",
+    "content_type": 8,
+    "codename": "change_demo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete demo",
+    "content_type": 8,
+    "codename": "delete_demo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view demo",
+    "content_type": 8,
+    "codename": "view_demo"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Новость",
+    "content_type": 9,
+    "codename": "add_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Новость",
+    "content_type": 9,
+    "codename": "change_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Новость",
+    "content_type": 9,
+    "codename": "delete_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Новость",
+    "content_type": 9,
+    "codename": "view_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add account",
+    "content_type": 10,
+    "codename": "add_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change account",
+    "content_type": 10,
+    "codename": "change_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete account",
+    "content_type": 10,
+    "codename": "delete_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view account",
+    "content_type": 10,
+    "codename": "view_account"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Тег",
+    "content_type": 11,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Тег",
+    "content_type": 11,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Тег",
+    "content_type": 11,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Тег",
+    "content_type": 11,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add image",
+    "content_type": 12,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change image",
+    "content_type": 12,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete image",
+    "content_type": 12,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view image",
+    "content_type": 12,
+    "codename": "view_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add view count",
+    "content_type": 13,
+    "codename": "add_viewcount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change view count",
+    "content_type": 13,
+    "codename": "change_viewcount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete view count",
+    "content_type": 13,
+    "codename": "delete_viewcount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view view count",
+    "content_type": 13,
+    "codename": "view_viewcount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add favorite article",
+    "content_type": 14,
+    "codename": "add_favoritearticle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change favorite article",
+    "content_type": 14,
+    "codename": "change_favoritearticle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete favorite article",
+    "content_type": 14,
+    "codename": "delete_favoritearticle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view favorite article",
+    "content_type": 14,
+    "codename": "view_favoritearticle"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "Authors",
+    "permissions": [
+      33,
+      34,
+      35,
+      36,
+      45,
+      46,
+      47,
+      48,
+      41,
+      42,
+      43,
+      44
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 2,
+  "fields": {
+    "name": "Moderation",
+    "permissions": [
+      14,
+      16,
+      36,
+      48,
+      44,
+      38,
+      40
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 3,
+  "fields": {
+    "name": "Readers",
+    "permissions": [
+      14,
+      16,
+      36,
+      48,
+      44,
+      38,
+      40
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$s4VqGszkd9xb14gDH3rT6t$0k6txhUMlSKAbIMxZKx4H/zbVa5zuWJGbLGSrmPidqM=",
+    "last_login": "2023-12-17T11:54:23.828Z",
+    "is_superuser": true,
+    "username": "Admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "Admin@yandex.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-11-17T08:52:31Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$XJbzP7L1RzKCULOaHNa0Ep$5vjTMtlHhiyndyc3pO17DczEJTWojdKwWqMQ2jeKrPI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DemoUser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-23T19:00:12Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$sod5ieJUEEWSXizAiomrLB$8hmtUKeUPKwxuBlOmVJCP+vgYktg6CDFrTGvnYh75eg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Автор",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-11-26T17:27:05.357Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$Uy7EyU64rHdMjOTZWE8U3p$ZrD8e+ru9nn8Xe34M9dpkY7FsAif4TZqqU5VhEy92MA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DecUser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-08T12:13:14.080Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$7cZJcBc2jSRuoxoHzGEZch$XsrF/QwGeCyquV0qZhiZxj6IAC0x4dOZsB+JkA0m1/w=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DecUser1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-08T12:15:19.329Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$zL7SCBDqSfWaL4aEDoe3O8$X3nYG6WPNoymHiOXlqHJdH6LzboO3OmDxcq0YP53sWY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "DecUser2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-08T12:18:24.599Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$WvHn6ZoeUNvt2hmIBcYZYx$NjwmhTPWr65aEyswCUyoJn3YjGHpKqyBPvKHGTJBnH8=",
+    "last_login": "2023-12-09T12:58:08.294Z",
+    "is_superuser": false,
+    "username": "JUser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-09T12:11:10.971Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$rqw9k6Mz2k5JyyaruSv2tz$GNf/PyJlNAJ8pf0+sniDtg9oJ6jURBHwch8wZc96OsY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "User123",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-09T14:48:07.422Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ZHGyUoPVsOGFNtWfFO7571$j0FkrkWO7ZRNplqjxgXPhBTIKKRVGsFuqttyKrK5b84=",
+    "last_login": "2023-12-10T13:02:19.392Z",
+    "is_superuser": false,
+    "username": "Pip",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-10T12:56:32.187Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$r27gbGtGedoghURLvXYbVB$1IL5zJg22LcR9vXedM2DUzPWSrSlDTarvo01JTeWTcc=",
+    "last_login": "2023-12-12T12:04:56.534Z",
+    "is_superuser": false,
+    "username": "Пип",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-12T12:04:47.107Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$EKUstelgKg8pYiw9nLB54M$LQNfl0E2uFD1Cq410+gRoR7Yj9wJ2htK4s64WAESssM=",
+    "last_login": "2023-12-16T12:27:04.183Z",
+    "is_superuser": false,
+    "username": "FreshAuthor",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-13T04:57:25.783Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$3aaSoDDgALrCFze6LCjXAC$PFsiCfo72p4v8YUZN9S82Hyt+cmDXZ+BDvf6GYhHyk4=",
+    "last_login": "2023-12-14T20:37:06.678Z",
+    "is_superuser": false,
+    "username": "NewAuthor",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-13T11:44:08.321Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$bk5daLRaOJZWUmmKGKz34Y$NkGfGaqthNBDCqLuo4ESQ/JZ9TKAQgmzoSN1iUlOOjs=",
+    "last_login": "2023-12-13T11:49:06.499Z",
+    "is_superuser": false,
+    "username": "NewReader",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-13T11:44:29.466Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 19,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$L1XNQYwYiksFIS14O8e3eS$K/4MtrZ/yJGgPzDrhOrs/dyac7xl4od8cPIX9dWTduE=",
+    "last_login": "2023-12-13T12:47:38.654Z",
+    "is_superuser": false,
+    "username": "Reader",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-13T12:37:57.129Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$OBRoCHngywIU2re3XzYkoV$NWyWv9dRKiTSzZIKgGid86bXiU1VVB7bKHLz8D9BRg8=",
+    "last_login": "2023-12-13T12:48:12.058Z",
+    "is_superuser": false,
+    "username": "Reader1000",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-13T12:39:27.749Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 21,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$CBMUYQ5oO1CTuqJ0pLYK0h$fG4JrJw3uDJfd8XW+3vva5sLTl/x62VUDmy7YtCAt78=",
+    "last_login": "2023-12-16T12:23:43.795Z",
+    "is_superuser": false,
+    "username": "NewUser555",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-16T12:23:42.951Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 22,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$nrItDAlYdHi3uKmZoI8m6r$bp/C0E+X0srpSXJEMBxBexH8XKJHf4Lu0BvKT02t8/M=",
+    "last_login": "2023-12-16T12:34:49.392Z",
+    "is_superuser": false,
+    "username": "User111",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-16T12:25:55Z",
+    "groups": [
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "main",
+    "model": "book"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "magazine",
+    "model": "demo"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "news",
+    "model": "article"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "users",
+    "model": "account"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "news",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "news",
+    "model": "image"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "news",
+    "model": "viewcount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "users",
+    "model": "favoritearticle"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5rfs5rtgb56q15en2e0p5psvnbfkne0a",
+  "fields": {
+    "session_data": "e30:1rBx75:noI6GIquS6SyAmrIC4gjaVRlE-VIVpLCiVwcrzf1g1s",
+    "expire_date": "2023-12-23T13:11:23.244Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gykzs69mxluyp039q0mkev9z4ojho7jr",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCggODSfc9AZoZBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0ZXERWpx-NwR6cNtBvkO7zZLmti4Tyl2RB-1ynDM_r4f7d1Ch12_tC1qHGiEG9DGA0sWYGMiTV9GqgmjZmHPRrGlQYPUQQyB0bFxB5iLeH-I-ODE:1r6nnF:d3g5N757HgsUzFTkFd4o3h1tKC6sgkh6v2rRVb_nYN4",
+    "expire_date": "2023-12-09T08:13:37.329Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lsqxkf37amj8g8ug6z9o8jsxtfn1ma56",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCggODSfc9AZoZBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0ZXERWpx-NwR6cNtBvkO7zZLmti4Tyl2RB-1ynDM_r4f7d1Ch12_tC1qHGiEG9DGA0sWYGMiTV9GqgmjZmHPRrGlQYPUQQyB0bFxB5iLeH-I-ODE:1rBbRV:SAdG4sPGmp1pzr1jBuP_GKOKyCuDLAb8Yt1TVQ2jizY",
+    "expire_date": "2023-12-22T14:03:01.033Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x5qjqx44wn21znhdc4dt333tacyeqs0g",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hBgIBCX7j0DGYZBqgaS0q4a726bdKHb_977m4i4LjWug-c4ZXEVWonL75iQXtwOkp_YHl1Sb8s8JXko8qRD3nvm9-10_w4qjrrXKVtvU4DiiwKbGBQXBGKlHBeHhYGs12knziodEI3mbAoQeWBjgvh8ASgYONY:1rCJLH:X70psG1__69OzKUGd2odOuqSPhIYhUbxImCwvru6RP0",
+    "expire_date": "2023-12-24T12:55:31.417Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y3hcehdx0dr9rb7nlzc4qtxy3ksohfn2",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCggODSfc9AZoZBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0ZXERWpx-NwR6cNtBvkO7zZLmti4Tyl2RB-1ynDM_r4f7d1Ch12_tC1qHGiEG9DGA0sWYGMiTV9GqgmjZmHPRrGlQYPUQQyB0bFxB5iLeH-I-ODE:1rEpix:WG37Svzhplq-FY-muOmvE9s8-VKYyW7LXOLuPg3_HPM",
+    "expire_date": "2023-12-31T11:54:23.891Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yh9su4f9t45kngl1ssvzzpyp9qqgcs9o",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCggODSfc9AZoZBqoYmpV0Z765NutDtf-_9l0iwrTVtnZc0ZXERWpx-NwR6cNtBvkO7zZLmti4Tyl2RB-1ynDM_r4f7d1Ch12_tC1qHGiEG9DGA0sWYGMiTV9GqgmjZmHPRrGlQYPUQQyB0bFxB5iLeH-I-ODE:1r3ucB:Ctd1eZFIeUWOBB37IqoUBWXwe7tECrsOALEedWAebWo",
+    "expire_date": "2023-12-01T08:54:15.389Z"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 1,
+  "fields": {
+    "title": "Новость",
+    "image": "images/site_bg.png"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 2,
+  "fields": {
+    "title": "Пример",
+    "image": "images/1.png"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 3,
+  "fields": {
+    "title": "Новое изображение",
+    "image": "images/bx_loader.gif"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 4,
+  "fields": {
+    "title": "Новое изображение",
+    "image": "images/bx_loader_Pd1CpqS.gif"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 5,
+  "fields": {
+    "title": "Новое изображение",
+    "image": "images/bx_loader_SRyBd8z.gif"
+  }
+},
+{
+  "model": "magazine.demo",
+  "pk": 6,
+  "fields": {
+    "title": "Проверка",
+    "image": "images/site_bg.png"
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 2,
+  "fields": {
+    "title": "IT",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 3,
+  "fields": {
+    "title": "Наука",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 4,
+  "fields": {
+    "title": "Экономика",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 5,
+  "fields": {
+    "title": "Интересное",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 6,
+  "fields": {
+    "title": "Погода",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 8,
+  "fields": {
+    "title": "Личные финансы",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 9,
+  "fields": {
+    "title": "Путешествия",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 10,
+  "fields": {
+    "title": "Спорт",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 11,
+  "fields": {
+    "title": "Книги",
+    "status": true
+  }
+},
+{
+  "model": "news.tag",
+  "pk": 12,
+  "fields": {
+    "title": "Бизнесс",
+    "status": true
+  }
+},
+{
+  "model": "news.article",
+  "pk": 23,
+  "fields": {
+    "author": 1,
+    "title": "Чемпионат по сёрфингу",
+    "anouncement": "Чемпионат по сёрфингу",
+    "text": "Пятница, 17 ноября 2023 г. – Всемирная лига сёрфинга (WSL) объявляет, что Иван Иванов установил новый титул GUINNESS WORLD RECORDS™ за самый крупный сёрфинг на волнах (мужчины). WSL официально проанализировала, измерила и подтвердила рекорд Иванова в 2023 году на высоте 30,5 метра в рамках WSL Big Wave Record Chase, что сделало эту волну самой большой волной, когда-либо преодолеваемой человеком. И это произошло на нашем городском чемпионате!\r\n\r\nЧемпионат по серфингу: Эпические сражения на волнах Серфинг – это одно из самых захватывающих и захватывающих видов спорта, которое сочетает силу и грацию, смелость и технику. Неудивительно, что чемпионаты по серфингу собирают тысячи зрителей и участников со всего мира, чтобы наблюдать за эпическими сражениями на волнах. Один из самых престижных и известных чемпионатов по серфингу – Всемирная лига серфинга (World Surf League, WSL). Он проводится ежегодно и включает в себя несколько этапов, которые проходят в разных уголках планеты. Участники борются за звание лучшего серфера мира и борются за крупные денежные призы. Чемпионаты по серфингу обычно проводятся на самых лучших пляжах и волнах, которые могут предложить различные страны. Верными и постоянными местами проведения этапов WSL являются такие знаменитые пляжи, как Беллс-Бич в Австралии, Джеффриз-Бей в Южной Африке, Хоссегор во Франции и Пайплайн на Гавайях. На этих пляжах серферы сталкиваются с огромными волнами и соревнуются в мастерстве и дерзости. Что делает чемпионаты по серфингу такими захватывающими? Во-первых, это исключительное мастерство серферов. Они с легкостью скользят по волнам, выполняют сложные трюки и взмахи, вызывающие восхищение у зрителей. Во-вторых, это опасность, с которой сталкиваются серферы на протяжении соревнований. Они вынуждены справляться с быстро меняющимися условиями на волнах, конкурировать друг с другом за лучшие волны и преодолевать страх перед огромными прибоями. В-третьих, это захватывающие дух действия и неизвестность исхода соревнования. Каждая волна может изменить ход событий и решить судьбу участника. Серфинг – это еще и способ объединить людей со всего мира. Чемпионаты по серфингу привлекают не только профессионалов, но и любителей этого удивительного вида спорта. Зрители и участники со всех уголков планеты собираются на пляжах, чтобы поддержать своих любимых серферов и насладиться спектаклем на волнах. Это создает неповторимую атмосферу, где все единодушно ощущают и разделяют страсть к серфингу. Чемпионаты по серфингу – это не только спортивное мероприятие, но и праздник, который объединяет любителей серфинга со всего мира. Наблюдать за эпическими сражениями на волнах – это как погрузиться в водный мир приключений, где мастерство и смелость выходят на первый план. Чемпионаты по серфингу – это неотъемлемая часть культуры серфинга и великолепная возможность насладиться удивительным и захватывающим спортом.\r\n\r\n«Я знал, что она большая, когда я греб на нее, а затем, когда я взлетел, я посмотрел вниз и понял, что это определенно самая большая волна, которую я когда-либо ловил», - сказал Иванов. «Я знал, что это была волна всей моей жизни, все, как все сложилось, и то, как я взял на себя обязательства, поддержал себя, сказал себе идти и верил, что смогу это сделать. Поездка была для меня таким прорывом. Это будет действительно особенным и фантастическим событием в моей серф-карьере. Получить такую награду — это действительно круто, я не могу в это поверить.\r\nВсемирная лига серфинга (WSL) — это глобальный сообщество соревнований по сёрфингу, который с 1976 года определяет бесспорных чемпионов мира и демонстрирует лучших сёрферов мира на лучших в мире волнах. WSL состоит из подразделения туров и соревнований, которое ежегодно наблюдает и проводит более 180 глобальных соревнований; WSL WaveCo, дом самой большой в мире высокопроизводительной искусственной волны; и WSL Studios, независимый продюсер проектов без сценария и сценариев.\r\nРедакция Телеграф напоминает всем желающим предолеть новый рекорд: следующий чемпионат состоится ровно через год, пробуйте и у вас что-то точно получится!",
+    "date": "2023-12-10T12:27:39.754Z",
+    "category": "S",
+    "slug": "0",
+    "tags": [
+      5,
+      10
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 24,
+  "fields": {
+    "author": 1,
+    "title": "Новый парк",
+    "anouncement": "Новый парк",
+    "text": "Открытие нового городского парка: место для отдыха и релаксации Городские парки являются важной частью жизни любого города. Они представляют собой оазисы зелени и покоя, где горожане могут отдохнуть от суеты и напряжения повседневной жизни. C радостью анонсируем, что в нашем городе открылся новый городской парк, который обещает стать местом, привлекающим множество посетителей. Новый городской парк предлагает широкий спектр возможностей для отдыха и развлечений. Он занимает значительную площадь и включает в себя различные зоны для любителей активного отдыха и спорта, места для пикников, а также зоны для барбекю. Беговые дорожки, велосипедные трассы и площадки для игр позволят посетителям проводить время на свежем воздухе, наслаждаясь активными занятиями. Однако, новый городской парк также предлагает возможности для тех, кто предпочитает более спокойный и расслабляющий отдых. Здесь вы можете прогуляться по живописным аллеям, наслаждаясь красотой природы и пение птиц. Уютные скамейки и площадки для отдыха создают атмосферу комфорта, идеальную для чтения книги или просто наслаждения тишиной парка. Одной из особенностей нового городского парка является наличие пруда. Это место, где можно покормить уток или просто насладиться видом воды. Прогулка вокруг пруда станет отличным способом расслабиться и насладиться красотой природы. Новый городской парк не только создает благоприятную атмосферу для отдыха, но и способствует сохранению экологической равновесия. Разнообразие растений и деревьев в парке создает благоприятную среду для различных видов животных и насекомых. Это не только придает парку уникальный характер, но и способствует сохранению биологического разнообразия в городе. Открытие нового городского парка в нашем городе представляет собой значимое событие для всех его жителей. Это место, которое будет радовать нас свежим воздухом, живописными видами и возможностями для активного отдыха. Отправляйтесь в новый городской парк, чтобы насладиться его прелестями и зарядиться новой энергией.",
+    "date": "2023-12-13T11:50:54.030Z",
+    "category": "T",
+    "slug": "0",
+    "tags": [
+      5,
+      9
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 25,
+  "fields": {
+    "author": 1,
+    "title": "Фестиваль состоялся!",
+    "anouncement": "Фестиваль состоялся!",
+    "text": "Городской фестиваль музыки: мелодия, ритм и незабываемые впечатления Музыка – это универсальный язык, способный объединить людей из разных культур, возрастов и национальностей. Она вдохновляет, создает неповторимую атмосферу и приносит радость каждому, кто открывает свое сердце для ее звучания. И нет ничего лучше, чем насладиться музыкой на городском фестивале, где музыкальные таланты со всего мира собираются, чтобы подарить зрителям незабываемые эмоции. Городские фестивали музыки – это яркое событие в культурной жизни города, которое собирает огромное количество людей. Такие фестивали проводятся на открытых площадках, в парках, на улицах и в других общественных местах. Они становятся настоящим музыкальным праздником, где зрители могут наслаждаться самыми разнообразными жанрами музыки: от классической до современной, от рока до джаза, от хип-хопа до регги. Главное преимущество городских фестивалей музыки заключается в том, что они доступны для всех. Вход на мероприятие обычно бесплатный или стоит символическую сумму, что позволяет любому желающему насладиться живой музыкой. Кроме того, на фестивалях можно услышать как уже известных и признанных музыкантов, так и талантливых новичков, которые только начинают свою карьеру. Это создает атмосферу взаимодействия и открытости, где каждый находит что-то по душе и получает удовольствие от музыки. Городской фестиваль музыки – это не только музыкальное событие, но и возможность познакомиться с новыми людьми, обсудить любимые группы и исполнителей, поделиться своими эмоциями. Здесь вы можете встретить единомышленников, с которыми разделите свою любовь к музыке и создадите новые знакомства и дружеские связи. Фестивали музыки также являются отличным местом для расширения кругозора и открытия новых музыкальных направлений, о которых вы до этого, возможно, не слышали. Организация городского фестиваля музыки – это огромный труд и хорошо продуманное мероприятие. Организаторы стараются привлечь известных музыкантов, создать комфортные условия для зрителей и обеспечить высокое качество звучания. Они также заботятся о разнообразии музыкальных жанров и стилей, чтобы каждый посетитель мог найти что-то по своему вкусу. Кроме того, на фестивалях часто проводятся дополнительные мероприятия, такие как выставки, мастер-классы, встречи с музыкантами, которые делают участие в фестивале еще более интересным и насыщенным. Городские фестивали музыки – это незабываемые впечатления, приятные эмоции и возможность окунуться в удивительный мир музыки. Они создают атмосферу радости, вдохновения и сближения людей, позволяют забыться на время и насладиться самыми прекрасными мелодиями. Если вы еще не посещали городской фестиваль музыки, не упустите возможность испытать это непередаваемое чувство искусства и музыки, которое они могут дарить.",
+    "date": "2023-12-10T12:27:55.100Z",
+    "category": "C",
+    "slug": "0",
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 30,
+  "fields": {
+    "author": 1,
+    "title": "Новость 1",
+    "anouncement": "Новость 1",
+    "text": "Новость 1",
+    "date": "2023-12-14T13:32:18.875Z",
+    "category": "",
+    "slug": "",
+    "tags": [
+      2
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 31,
+  "fields": {
+    "author": 1,
+    "title": "Новость 2",
+    "anouncement": "Новость 2",
+    "text": "Новость 2",
+    "date": "2023-12-14T13:32:43.792Z",
+    "category": "",
+    "slug": "",
+    "tags": [
+      12
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 32,
+  "fields": {
+    "author": 1,
+    "title": "Новость 3",
+    "anouncement": "Новость 3",
+    "text": "Новость 3",
+    "date": "2023-12-14T13:33:07.023Z",
+    "category": "",
+    "slug": "",
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "news.article",
+  "pk": 33,
+  "fields": {
+    "author": 14,
+    "title": "Свежая новость",
+    "anouncement": "Свежая новость",
+    "text": "Свежая новость",
+    "date": "2023-12-14T20:18:16.920Z",
+    "category": "",
+    "slug": "",
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "news.image",
+  "pk": 9,
+  "fields": {
+    "article": 23,
+    "title": "surf.jpg",
+    "image": "article_images/surf.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 10,
+  "fields": {
+    "article": 23,
+    "title": "surf_1.jpg",
+    "image": "article_images/surf_1.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 11,
+  "fields": {
+    "article": 24,
+    "title": "Парк.jpg",
+    "image": "article_images/Парк.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 12,
+  "fields": {
+    "article": 24,
+    "title": "Парк 100.jpg",
+    "image": "article_images/Парк_100.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 13,
+  "fields": {
+    "article": 24,
+    "title": "Парк 1000.jpg",
+    "image": "article_images/Парк_1000.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 14,
+  "fields": {
+    "article": 25,
+    "title": "3.jpg",
+    "image": "article_images/3_oU3q0VO.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 19,
+  "fields": {
+    "article": 30,
+    "title": "1001475320_1.jpg",
+    "image": "article_images/1001475320_1_HwrlN4w.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 20,
+  "fields": {
+    "article": 31,
+    "title": "50168560299.jpg",
+    "image": "article_images/50168560299_DGjeWDK.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 21,
+  "fields": {
+    "article": 32,
+    "title": "img.jpg",
+    "image": "article_images/img_9UIUejG.jpg"
+  }
+},
+{
+  "model": "news.image",
+  "pk": 22,
+  "fields": {
+    "article": 33,
+    "title": "Снимок экрана 2023-11-16 113839.png",
+    "image": "article_images/Снимок_экрана_2023-11-16_113839.png"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 1,
+  "fields": {
+    "article": 24,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-13T14:32:34.616Z"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 2,
+  "fields": {
+    "article": 23,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-13T14:34:48.255Z"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 3,
+  "fields": {
+    "article": 30,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-14T20:10:26.438Z"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 4,
+  "fields": {
+    "article": 31,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-14T20:10:34.393Z"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 5,
+  "fields": {
+    "article": 33,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-14T20:18:30.029Z"
+  }
+},
+{
+  "model": "news.viewcount",
+  "pk": 6,
+  "fields": {
+    "article": 25,
+    "ip_address": "127.0.0.1",
+    "view_date": "2023-12-17T12:03:13.961Z"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 1,
+  "fields": {
+    "nickname": "Nin",
+    "birthday": "1985-05-01",
+    "gender": "M",
+    "account_image": "account_images/photo_2023-01-09_13-25-13_A1AYmKA.jpg",
+    "address": "Айя-Напа",
+    "vk": "Admin",
+    "telegram": "@Admin",
+    "phone": "+7123456789"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 2,
+  "fields": {
+    "nickname": "Пользователь 1",
+    "birthday": "1985-05-01",
+    "gender": "F",
+    "account_image": "default.jpg",
+    "address": "0",
+    "vk": "0",
+    "telegram": "0",
+    "phone": "0"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 11,
+  "fields": {
+    "nickname": "Pip",
+    "birthday": "1985-05-01",
+    "gender": "M",
+    "account_image": "account_images/SYzXj8V528E.jpg",
+    "address": "1",
+    "vk": "1",
+    "telegram": "1",
+    "phone": "1"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 14,
+  "fields": {
+    "nickname": "FreshAuthor",
+    "birthday": "1985-05-01",
+    "gender": "M",
+    "account_image": "default.jpg",
+    "address": "1",
+    "vk": "1",
+    "telegram": "1",
+    "phone": "1"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 16,
+  "fields": {
+    "nickname": "NewAuthor",
+    "birthday": "1985-05-01",
+    "gender": "M",
+    "account_image": "default.jpg",
+    "address": "100",
+    "vk": "1",
+    "telegram": "1",
+    "phone": "100"
+  }
+},
+{
+  "model": "users.account",
+  "pk": 19,
+  "fields": {
+    "nickname": "Reader",
+    "birthday": null,
+    "gender": null,
+    "account_image": "default.jpg",
+    "address": null,
+    "vk": null,
+    "telegram": null,
+    "phone": null
+  }
+},
+{
+  "model": "users.account",
+  "pk": 20,
+  "fields": {
+    "nickname": "Reader1000",
+    "birthday": null,
+    "gender": null,
+    "account_image": "default.jpg",
+    "address": null,
+    "vk": null,
+    "telegram": null,
+    "phone": null
+  }
+},
+{
+  "model": "users.account",
+  "pk": 21,
+  "fields": {
+    "nickname": "NewUser555",
+    "birthday": null,
+    "gender": null,
+    "account_image": "default.jpg",
+    "address": null,
+    "vk": null,
+    "telegram": null,
+    "phone": null
+  }
+},
+{
+  "model": "users.account",
+  "pk": 22,
+  "fields": {
+    "nickname": "User111",
+    "birthday": null,
+    "gender": null,
+    "account_image": "default.jpg",
+    "address": null,
+    "vk": null,
+    "telegram": null,
+    "phone": null
+  }
+},
+{
+  "model": "users.favoritearticle",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "article": 24,
+    "create_at": "2023-12-13T15:16:00.028Z"
+  }
+}
+]

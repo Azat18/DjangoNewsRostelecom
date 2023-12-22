@@ -1,0 +1,178 @@
+<!--<!DOCTYPE html>-->
+<!--{% load static %}-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Аккаунт</title>-->
+<!--    <link rel ="stylesheet" href = "{% static 'main/css/style.css' %}">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Аккаунт пользователя</h1>-->
+<!--<form method="post">-->
+<!--    {% csrf_token %}-->
+<!--  <div class="row">-->
+<!--    <div class="col-md" style="display:inline-block;">-->
+<!--        <p><label> Имя </label></p>-->
+<!--        <br>-->
+<!--        <p><label> Фамилия </label></p>-->
+<!--        <br>-->
+<!--        <p><label> День рождения </label></p>-->
+<!--        <br>-->
+<!--        <p><label> Город </label></p>-->
+<!--        <br>-->
+<!--        <p><label> Телефон </label></p>-->
+<!--        <br>-->
+<!--    </div>-->
+<!--    <div class="col-md" style="display:inline-block;">-->
+<!--        <p><input type="text" name="sname" align="right"></p>-->
+<!--        <br>-->
+<!--        <p><input type="text" name="fname"></p>-->
+<!--        <br>-->
+<!--        <p><input type="text" name="sname" align="right"></p>-->
+<!--        <br>-->
+<!--        <p><input type="text" name="fname"></p>-->
+<!--        <br>-->
+<!--        <p><input type="text" name="sname" align="right"></p>-->
+<!--        <br>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--<div class="row">-->
+<!--<div class="col-md-5" style="display:inline-block;">-->
+<!--    <input class="btn-primary" type="submit" value="Сохранить">-->
+<!--</div></div>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+{% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{% block title %} Аккаунт {% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/font/font-awesome.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/font/font.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/bootstrap.min.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/style.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/responsive.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/jquery.bxslider.css' %}" media="screen" />
+{% block head %}{% endblock %}
+
+</head>
+   <!-- HEADER -->
+<div class="body_wrapper">
+  <div class="center">
+
+    <div class="header_area">
+      <div class="logo floatleft"><a href="#"><img src="{% static 'magazine/images/logo.png' %}" alt="" /></a></div>
+      <div class="top_menu floatleft">
+        <ul>
+          <li><a href="/magazine">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+<!--          <li><a href="#">Подписка</a></li>-->
+          <li><a href="/account">Войти</a></li>
+        </ul>
+      </div>
+      <div class="social_plus_search floatright">
+        <div class="social">
+          <ul>
+            <li><a href="#" class="twitter"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+            <li><a href="#" class="feed"></a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <form action="#" method="post" id="search_form">
+            <input type="text" value="Найти новость" id="s" />
+            <input type="submit" id="searchform" value="search" />
+            <input type="hidden" value="post" name="post_type" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /HEADER -->
+
+
+
+<div class="body_wrapper">
+  <div class="center">
+
+<h1>Аккаунт пользователя</h1>
+<form method="post">
+    {% csrf_token %}
+    <div class="container">
+  <div class="row">
+    <div class="col-md" style="display:inline-block;">
+        <p><label> Имя </label></p>
+        <br><br>
+        <p><label> Фамилия </label></p>
+        <br>
+        <p><label> День рождения </label></p>
+        <br>
+        <p><label> Город </label></p>
+      <br><br>
+        <p><label> Телефон </label></p>
+
+    </div>
+    <div class="col-md" style="display:inline-block;">
+        <p><input type="text" name="sname" align="right"></p>
+        <br>
+        <p><input type="text" name="fname"></p>
+        <br>
+        <p><input type="text" name="sname" align="right"></p>
+        <br>
+        <p><input type="text" name="fname"></p>
+        <br>
+        <p><input type="text" name="sname" align="right"></p>
+    </div>
+  </div>
+<div class="row">
+    </div>
+<div class="col-md-5" style="display:inline-block;">
+    <input class="btn-primary" type="submit" value="Сохранить">
+</div></div>
+    </form>
+
+  </div>
+
+  </div>
+
+<!-- FOOTER -->
+<div class="body_wrapper">
+  <div class="center">
+
+    <div class="footer_top_area">
+<!--      <div class="inner_footer_top"> <img src="{% static 'magazine/images/add3.png' %}" alt="" /> </div>-->
+    </div>
+    <div class="footer_bottom_area">
+      <div class="footer_menu">
+        <ul id="f_menu">
+          <li><a href="#">новости</a></li>
+          <li><a href="#">спорт</a></li>
+          <li><a href="#">технологии</a></li>
+          <li><a href="#">бизнес</a></li>
+          <li><a href="#">кино</a></li>
+          <li><a href="#">куда пойти</a></li>
+          <li><a href="#">культура</a></li>
+          <li><a href="#">книги</a></li>
+          <li><a href="#">блоги</a></li>
+        </ul>
+      </div>
+      <div class="copyright_text">
+        <p>Все права защищены &copy; АО Джанго 2050 Сетевое издание Телеграф. <a target="_blank" rel="nofollow" href="http://www.graphicsfuel.com/2045/10/wp-magazine-theme-template-psd/"></a></p>
+        <p>Любое использование материалов допускается только при соблюдении правил перепечатки и при наличии гиперссылки на</p>
+      </div>
+    </div>
+    <!-- /FOOTER -->
+  </div>
+</div>

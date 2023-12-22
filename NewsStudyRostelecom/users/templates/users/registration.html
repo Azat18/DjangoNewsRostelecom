@@ -1,0 +1,35 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+{% block title %} Регистрация {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+
+<!--<div class="body_wrapper">-->
+  <div class="center">
+        <div class="row">
+            <div class="text-center" style="margin-top:30px;">
+                <h1 >Регистрация нового пользователя</h1>
+                <form method="post" class="contact_form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-check">
+                    <h5>Тип аккаунта:</h5>
+
+                    <div>
+                        <input class="checkboxinput" type="radio" id="author" name="account_type" value="author" />
+                        <label class="form-check-label" for="author">Автор</label>
+                    </div>
+                    <div>
+                        <input class="checkboxinput" type="radio" id="reader" name="account_type" value="reader"/>
+                        <label class="form-check-label" for="reader">Читатель</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-success" value = "Зарегистрировать">
+                </form>
+            </div>
+        </div>
+  </div>
+<!--</div>-->
+{% endblock %}

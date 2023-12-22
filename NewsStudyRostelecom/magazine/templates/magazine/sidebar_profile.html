@@ -1,0 +1,115 @@
+{% load bootstrap5 %}
+{% load static %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+<script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+<!--скрипты ниже для работы выпадающего меню пользователя-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+<!--Сделано на основе примеров боковых меню с этой страницы: https://getbootstrap.com/docs/5.0/examples/sidebars/#-->
+
+
+    <aside>
+
+        <!--    Подробнее про flex-классы: https://bootstrap-4.ru/docs/4.0/utilities/flex/-->
+<!--            d-none d-lg-block | Такой класс позвоялет спрятать элементы при отображении на экранах размером меньше lg-->
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <img  src="{% static 'main' %}/img/News_icon.png" width="40" height="50">
+              <span class="fs-5 d-none d-lg-block responsive-title">Новости нашего города</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                  <a href="/admin/" {% if request.path  == '/admin/' %} class="link-active" aria-current="page" {% endif %}>
+                      <i class="fa fa-user menu-icon {% if request.path  == '/admin/' %} link-active {% endif %}" ></i>
+                      <div class="d-none d-lg-block">Админка</div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                   <a href="{% url 'home' %}" {% if request.resolver_match.view_name  == 'home' %} class="link-active" aria-current="page" {% endif %}>
+                      <i class="fa fa-house menu-icon" ></i>
+                      <div class="d-none d-lg-block">Главная</div>
+                  </a>
+              </li>
+
+              <li class="nav-item">
+                 <a href="{% url 'news' %}" {% if request.resolver_match.view_name  == 'news' %} class="link-active" aria-current="page" {% endif %}>
+                    <i class="fa fa-bars menu-icon"></i> <div class="d-none d-lg-block">Все новости</div>
+                </a>
+              </li>
+                <li class="nav-item">
+                  <a href="/examples/" {% if request.path  == '/examples/' %} class="link-active" aria-current="page" {% endif %}>
+                        <i class="fa fa-hand menu-icon"></i>  <div class="d-none d-lg-block"> Примеры с урока</div>
+                    </a>
+              </li>
+            <li>
+                <a href="home/" {% if request.path  == '/home/' %} class="link-active" aria-current="page" {% endif %}>
+                    <i class="fa fa-backward menu-icon""></i>  <div class="d-none d-lg-block">Адаптированный шаблон </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" {% if request.path  == '/search/' %} class="link-active" aria-current="page" {% endif %}>
+                    <i class="fa fa-magnifying-glass menu-icon"></i>   <div class="d-none d-lg-block"> Поиск</div>
+
+                </a>
+              </li>
+              <li>
+                <a href="#" {% if request.path  == '/myarticles/' %} class="link-active" aria-current="page" {% endif %}>
+                    <i class="fa fa-pen-nib menu-icon"></i>  <div class="d-none d-lg-block"> Мои статьи</div>
+                </a>
+              </li>
+              <li>
+                <a href="{% url 'about' %}" {% if request.resolver_match.view_name  == 'about' %} class="link-active" aria-current="page" {% endif %}>
+                  <i class="fa fa-handshake menu-icon"></i>  <div class="d-none d-lg-block"> О сайте</div>
+                </a>
+              </li>
+            </ul>
+            <hr>
+
+           {% if request.user.id %}  <!-- проверяем аутентификацию-->
+                <div class="dropdown flex-column mb-auto" >
+                  <button class="btn btn-primary dropdown-toggle col-12" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background:#302a32;">
+                    <img src="{{ request.user.account.account_image.url }}" alt="" width="25" height="25" class="rounded-circle me-2">
+                      <div class="d-none d-lg-block "> {{ request.user.username }} </div>
+                  </button>
+                  <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="{% url 'create_article' %}"> Создать статью</a></li>
+                    <li><a class="dropdown-item" href="{% url 'profile' %}"> Мой аккаунт</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="{% url 'logout' %}"> Выход</a></li>
+                  </ul>
+                </div> <!-- выпадающее меню-->
+            {% else %} <!-- ссылки на регистрацию и аутентификацию-->
+                <ul class="nav nav-pills flex-column mb-auto">
+                      <li class="nav-item">
+                          <a href="{% url 'registration' %}" {% if request.resolver_match.view_name  == 'registration' %} class="link-active" aria-current="page" {% endif %}>
+                              <i class="fa fa-user menu-icon"></i>
+                              <div class="d-none d-lg-block">Регистрация</div>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="{% url 'login' %}" {% if request.resolver_match.view_name  == 'login' %}
+                          class="link-active" aria-current="page" {% endif %}>
+                              <i class="fa fa-sign menu-icon {% if request.path  == '/users/login' %}
+                               link-active {% endif %}" ></i>
+                              <div class="d-none d-lg-block">Вход</div>
+                          </a>
+                      </li>
+                </ul>
+            {% endif %}
+
+                <br >
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}">
+                          {{ message }}
+                     </div>
+                {% endfor %}
+            {% endif %}
+    </aside>

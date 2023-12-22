@@ -1,0 +1,158 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load users_extras %}
+{% load crispy_forms_tags %}
+{% block title %} {{ request.user.username }} - профиль{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block slider %}{% endblock %}
+{% load bootstrap5 %}
+{% block body %}
+<!--<div class="body_wrapper">-->
+<div class="center">
+    <div class="col-md-4 mb-3">
+        <aside>
+            <div class="container-fluid" style="background-color: #302a32; color: #000";>
+        <!--    Подробнее про flex-классы: https://bootstrap-4.ru/docs/4.0/utilities/flex/-->
+<!--            d-none d-lg-block | Такой класс позвоялет спрятать элементы при отображении на экранах размером меньше lg-->
+            <a href="/magazine/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none" style="font-size: 23px; height:90px;>
+            <span class="fs-5 d-none d-lg-block responsive-title">
+                <span>Панель пользователя</span>
+            </a>
+
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item border-top">
+                    <a href="/admin/" aria-current="page" style="color:white;">
+                        <i class="fa fa-user menu-icon {% if request.path  == '/admin/' %} link-active {% endif %}" ></i>
+                        <div class="d-none d-lg-block">Админка</div>
+                    </a> </li>
+                <li class="nav-item">
+                    <a href="{% url 'home' %}" {% if request.resolver_match.view_name  == 'home' %} class="link-active" aria-current="page" {% endif %} style="color:white;">
+                        <i class="fa fa-house menu-icon" ></i>
+                        <div class="d-none d-lg-block">Главная</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'profile' %}" {% if request.resolver_match.view_name  == 'news' %} class="link-active" aria-current="page" {% endif %} style="color:white;">
+                    <i class="fa fa-gear menu-icon"></i> <div class="d-none d-lg-block">Мой профиль</div>
+                    </a>
+                </li>
+                {% if request.user|has_group:"Authors" %}
+                <li>
+                    <a href="{% url 'my_news_list' %}" {% if request.resolver_match.view_name  == 'my_news_list' %} class="link-active" aria-current="page" {% endif %} style="color:white;">
+                    <i class="fa fa-pen-nib menu-icon"></i>  <div class="d-none d-lg-block"> Мои статьи</div>
+                    </a>
+                </li>
+                {% endif %}
+                <li>
+                    <a href="#" {% if request.path  == '/myarticles/' %} class="link-active" aria-current="page" {% endif %} style="color:white;">
+                    <i class="fa fa-newspaper menu-icon"></i>  <div class="d-none d-lg-block"> Избранное</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'logout' %}"  aria-current="page" style="color:white;">
+                    <i class="fa fa-water-ladder menu-icon"></i>  <div class="d-none d-lg-block"> Выход из аккаунта</div>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+
+            </div>
+        </aside>
+    </div>
+
+<div class="col-md-8 mb-9">
+<div class="row">
+    <div class="text-center" style="margin-top:30px;">
+        <h2>Профиль пользователя {{ request.user.username }}</h2>
+        <br>
+        <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="{{ request.user.account.account_image.url }}" alt="{{ request.user.username }}"
+                                 class="rounded-circle" width="150">
+                            <div class="mt-3">
+                                <h4> {{ request.user.username }}</h4>
+                                <p class="text-secondary mb-1"> {% if request.user.is_staff %} Автор {% endif %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                            <h6 class="mb-0">
+                                <img src="{% static 'magazine/images/vk.png' %}" style="height:24px; width:auto;">
+                                VK
+                            </h6>
+                            <span class="text-secondary">{{ request.user.account.vk }}</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                            <h6 class="mb-0">
+                                <img src="{% static 'magazine/images/tg.png' %}" style="height:24px; width:auto;">
+                                Telegram
+                            </h6>
+                            <span class="text-secondary">{{ request.user.account.telegram }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Имя</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                {{ request.user.first_name }} {{ request.user.last_name }}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                {{ request.user.email }}
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Phone</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                {{ request.user.account.phone }}
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                                {{ request.user.account.address }}
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <a class="btn btn-outline-primary" style="margin-bottom:15px;"
+                           href="{% url 'profile_update' %}">Редактировать</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+  </div>
+<!--</div>-->
+{% endblock %}

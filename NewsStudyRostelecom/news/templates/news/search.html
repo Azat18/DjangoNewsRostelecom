@@ -1,0 +1,11 @@
+{% load static %}
+       <form action="{% url 'search_news' %}" method="get">
+           <div class="row">
+           <div class="col-lg-8">
+               <input type="text" class="form-control" id="search_input" name="search_input" placeholder="Введите название статьи"/>
+           </div>
+           <div class="col-lg-4">
+               <button type="submit" class="btn btn-danger">Найти</button>
+           </div>
+           </div>
+       </form>

@@ -1,0 +1,68 @@
+
+
+
+<form method="post">
+    {% csrf_token %}
+    <h3>Выберите цвет</h3>
+    {% for color in colors%}
+        <input type="radio" id="{{ color }}" name="colors" value="{{ forloop.counter }}">
+        <label for="{{ color }}">{{ color }}</label><br>
+    {% endfor %}
+    <br>
+    <input class="btn-primary" type="submit" value="Сохранить">
+</form>
+
+<form method="post">
+    {% csrf_token %}
+    <p><label> Введите название товара </label>
+    <input type="text" name="title"></p>
+    <br>
+    <p><label> Введите цену товара </label>
+    <input type="text" name="price"></p>
+    <br>
+    <p><label> Выберите количество товара </label>
+    <input type="number" name="quantity" min="1" max="100"></p>
+    <br>
+    <input class="btn-primary" type="submit" value="Создать товар">
+
+    </form>
+<table width="500px;" border="1px;">
+    <tr>
+        <th> Товар </th>
+        <th> Цена </th>
+        <th> Кол-во </th>
+        <th> Итого </th>
+    </tr>
+    <tr>
+        <td> {{ water.title }} </td>
+        <td> {{ water.price }} </td>
+        <td> {{ water.quantity }} </td>
+        <td> {{ water.amount }} </td>
+    </tr>
+    <tr>
+        <td> {{ chocolate.title }} </td>
+        <td> {{ chocolate.price }} </td>
+        <td> {{ chocolate.quantity }} </td>
+        <td> {{ chocolate.amount }} </td>
+    </tr>
+</table>
+<!--    <h1>{{header1}}</h1>-->
+<!--    <p> value = {{value|default:"Нет"}}</p>-->
+<!--    <ul>-->
+<!--       {% for key,value in dictionary.items %}-->
+<!--        <li>{{ key }} : {{ value }}</li>-->
+<!--       {% endfor %}-->
+
+<!--        {{Пример}}-->
+<!--    </ul>-->
+
+
+<!--    {% if value > 0 %}-->
+<!--        <h3> Переменная больше нуля </h3>-->
+<!--    {% else %}-->
+<!--    <h3> Переменная не больше нуля </h3>-->
+<!--    {% endif %}-->
+
+    {% for n in numbers %}
+        <ul>{{ n.title|lower }} {{ n.date }}</ul>
+    {% endfor %}

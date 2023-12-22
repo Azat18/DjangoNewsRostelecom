@@ -1,0 +1,27 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+{% block title %} Вход в аккаунт {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+<!--<div class="body_wrapper">-->
+  <div class="center">
+        <div class="row">
+            <div class="text-center" style="margin-top:30px;">
+                    <h1 >Войти в аккаунт</h1>
+            <form method="post" class="contact_form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" class="btn btn-success" value = "Войти">
+                <div class="border-top pt-3">
+                    <small class="text-muted"> Нужен аккаунт?</small>
+                           <a class="ml-2" href="{% url 'registration' %}">Зарегистрироваться</a>
+                </div>
+            </form>
+            </div>
+
+        </div>
+  </div>
+<!--</div>-->
+{% endblock %}

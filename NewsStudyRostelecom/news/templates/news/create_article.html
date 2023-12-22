@@ -1,0 +1,24 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+{% block title %} Создание статьи {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+<!--<div class="body_wrapper">-->
+  <div class="center">
+        <div class="row">
+            <div class="text-center" style="margin-top:30px;">
+                    <h1 >Создание статьи</h1>
+            <!--                в обязательном порядке указываем enctype-->
+            <form method="post" class="contact_form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" class="btn btn-success" value = "Сохранить">
+            </form>
+            </div>
+
+        </div>
+  </div>
+<!--</div>-->
+{% endblock %}

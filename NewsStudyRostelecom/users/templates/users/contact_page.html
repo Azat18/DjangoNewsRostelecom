@@ -1,0 +1,29 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+{% block title %} Страница обратной связи {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+
+
+<!--<div class="body_wrapper">-->
+ <div class="center">
+       <div class="row">
+           <div class="text-center" style="margin-top:30px;">
+                   <h1 >Страница обратной связи</h1>
+
+
+               <h3 >Телеграф это те новости, которые вы с радостью узнаёте первыми и сразу делитись ими со всеми</h3>
+
+
+           </div>
+           <form method="post" class="contact_form">
+               {% csrf_token %}
+               {{ form|crispy }}
+               <input type="submit" class="btn btn-success" value = "Отправить">
+           </form>
+       </div>
+ </div>
+<!--</div>-->
+{% endblock %}

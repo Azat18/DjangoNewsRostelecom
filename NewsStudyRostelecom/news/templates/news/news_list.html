@@ -1,0 +1,99 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% block title %} Главная страница {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+
+
+<!--<div class="body_wrapper">-->
+  <div class="center">
+      <div class="container">
+          <div class="content_center">
+
+        <div class="row">
+
+            <label><h1> Фильтры: (Всего :{{ total }} результатов) </h1>
+            <form method="post">
+                {% csrf_token %}
+                        <div class="form-group col-11">
+                            <select class="form-select" name="author_filter" style="width:40%">
+                                <option value="0">Все авторы</option>
+                                {% for author in author_list %}
+                                <option value="{{ author.id }}" {% if selected_author == author.id %} selected {% endif %}> {{ author.username }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            <select class="form-select" name="category_filter" style="width:40%">
+                                <option value="0">Все категории</option>
+                                {% for c in categories %}
+                                <option value="{{ forloop.counter }}" {% if selected_category == forloop.counter %} selected {% endif %}> {{ c.1 }}
+                                </option>
+                                {% endfor %}
+                            </select>
+
+                            <input type="submit" class="btn btn-success" value="Применить">
+                        </div>
+            </form>
+        </label>
+    </div>
+
+  <div class="search">
+             {% block search %} {% include 'news/search.html' %} {% endblock %}
+         </div>
+
+ <!--    пагинатор -->
+    {% if total > 1 %}
+    <div class="row">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+              {% if articles.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ articles.previous_page_number }}">Previous</a></li>
+              {% endif %}
+              {% for p in articles.paginator.page_range %}
+                {% if articles.number == p %}
+                    <li class="page-item"><p class="page-link" style="color:black;"> {{ p }}</p></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="?page={{ p }}"> {{ p }}</a></li>
+                {% endif %}
+              {% endfor %}
+              {% if articles.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ articles.next_page_number }}">Next</a></li>
+              {% endif %}
+          </ul>
+        </nav>
+    </div>
+{% endif %}
+    <div class="row">
+        {% for article in articles %}
+            <div class="single_news">
+            <div class="p-4 p-md-5 text-white rounded bg-dark">
+                <div class="row">
+                    <div class="col-md-{% if article.image_set.all %}6{% else %}12 {% endif %} px-0">
+                        <h1 class="display-4 fst-italic"> {{ article.title }}</h1>
+                        <p class="lead my-3">{{ article.anouncement }}</p>
+                        <p class="lead mb-0"><a href="{% url 'news_detail' article.pk %}" class="text-white fw-bold">Полный текст...</a></p>
+                        <p><small>Просмотры: {{ article.get_views }}</small></p>
+                        <a class="btn btn-success" href="{% url 'favorites' article.pk %}"><i class="fa fa-bookmark">В избранное</i></a>
+                    </div>
+                    {% if article.image_set.all %}
+                    <div class="col-md-6 px-0">
+                        <img src="{{ article.image_set.all.0.image.url }}"
+                             style="width:100%; height:auto; border-radius:5px;">
+                        <br>
+                        <br>
+                        <img src="{{ article.image_set.all.1.image.url }}"
+                             style="width:100%; height:auto; border-radius:5px;">
+                    </div>
+                    {% endif %}
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+  </div>
+  </div>
+</div>
+<!--</div>-->
+{% endblock %}

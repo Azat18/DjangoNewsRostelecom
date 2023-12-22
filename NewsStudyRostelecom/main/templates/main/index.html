@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+{% load main_extras %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel ="stylesheet" href = "{% static 'main/css/style.css' %}">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    </head>
+<body>
+    <h1>{{Header1}}</h1>
+    <p>value = {{value|default:"No data"}}</p>
+    {% if value > 0 %}
+        <h3>Переменная больше нуля</h3>
+    {% else %}
+        <h3>Переменная не больше нуля</h3>
+    {% endif %}
+    <li>
+        {% for n in numbers %}
+        <ul>{{ n.title}}, {{ n.date }}</ul>
+        {% endfor %}
+    </li>
+    <h1>Главная страница из шаблона</h1>
+    <h3>Заголовок 3</h3>
+    <h6>Заголовок 6</h6>
+    <p>Параграф</p>
+    <h4>{{ 'Боковое меню сайта'|ladder }}</h4>
+    <!--<img src="https://vsegda-pomnim.com/uploads/posts/2023-07/1689256520_vsegda-pomnim-com-p-krasivii-vesennii-sad-foto-29.jpg" alt="Текст вместо изображения">
+    <a href="about/"> ссылка</a>-->
+    <!--<table border="1">
+        <th>Ячейка заголовка 1</th>
+        <th>Ячейка заголовка 2</th>
+        <tr>
+            <td>Текст ячейки 1</td>
+        </tr>
+        tr>
+            <td colspan="2">Строка 3</td>
+        </tr>
+    </table>-->
+    <div class="container">
+    <div class="row">
+        <div class="col col-sm-5">
+            <h1>Заголовок страницы</h1>
+              <h2> Новость 1 </h2>
+              <p> Текст новости</p>
+        </div>
+
+        <div class="col col-sm-5">
+            <h1>Заголовок страницы</h1>
+             <h2> Новость 1 </h2>
+              <p> Текст новости</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

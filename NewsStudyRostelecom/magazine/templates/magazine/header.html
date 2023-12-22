@@ -1,0 +1,118 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+<!-- jQuery !-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+<!-- jQuery UI !-->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!--<link rel="stylesheet" href="{% static 'magazine/css/search_autocomplete.css' %}">-->
+<!--<script src="{% static 'magazine/js/jquery.js' %}"></script>-->
+
+
+<script>
+ $(function() {
+   $("#search_input").autocomplete({
+     source: "{% url 'search_auto' %}",
+     select: function (event, ui) { //item selected
+       AutoCompleteSelectHandler(event, ui)
+     },
+     minLength: 2,
+   });
+ });
+
+
+ function AutoCompleteSelectHandler(event, ui)
+ {
+   var selectedObj = ui.item;
+ }
+
+
+</script>
+
+
+ <div class="center">
+     <div class="row" style="margin-top:10px;">
+         <div class="header_area">
+
+
+             <div class="col-md-9">
+                 <div class="main_title">
+                 <a href="/magazine/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none" style="font-size: 50px; height:0px;color:#302a32;>
+           <span class="fs-5 d-none d-lg-block responsive-title"">Телеграф</span>
+                 </a>
+                     <br>
+                </div>
+                 <div class="main_subtitle" style="font-size: 18px; height:80px;color:#302a32; text-align:left;padding-left:75px;">
+                 <span style="margin-top: 100px;">Сетевое издание</span>
+                 </div>
+             </div>
+
+
+            <div class="col-md-3">
+                {% if request.user.id %}  <!-- проверяем аутентификацию-->
+                <div class="main_menu_area floatleft" style="height:230px; background:#FFFFFF">
+                 <ul id="nav">
+                     <li><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background:#302a32;">
+                         <div class="col-md-5">
+                         <img src="{{ request.user.account.account_image.url }}" alt="" width="100px;" height="50px;" class="rounded-circle me-10">
+                         </div>
+                         <div class="col-md-6">
+                         <div class="d-none d-lg-block "> {{ request.user.username }} </div>
+                         </button>
+
+
+                         <ul style="background:#000; width:205px;">
+                             <li><a href="{% url 'create_article' %}">Создать статью</a></li>
+                             <li><a href="{% url 'profile' %}">Мой аккаунт</a></li>
+                             <li><hr class="dropdown-divider" style="color:white"></li>
+                             <li><a href="{% url 'logout' %}">Выход</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+                 </div>
+
+
+
+
+         {% else %} <!-- ссылки на регистрацию и аутентификацию-->
+         <ul class="nav nav-pills flex-column mb-auto">
+             <li class="nav-item">
+                 <a href="{% url 'registration' %}" {% if request.resolver_match.view_name  == 'registration' %} class="link-active" aria-current="page" {% endif %}>
+                 <i class="fa fa-user menu-icon"></i>
+                 <div class="d-none d-lg-block">Регистрация</div>
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="{% url 'login' %}" {% if request.resolver_match.view_name  == 'login' %}
+                 class="link-active" aria-current="page" {% endif %}>
+                 <i class="fa fa-sign menu-icon {% if request.path  == '/users/' %}
+                 link-active {% endif %}" ></i>
+                 <div class="d-none d-lg-block">Вход</div>
+                 </a>
+                 </li>
+             </ul>
+         {% endif %}
+         <br>
+          {% if messages %}
+          {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+              {{ message }}
+          </div>
+            </div>
+
+
+          {% endfor %}
+          {% endif %}
+
+
+
+
+
+
+       </div>
+     </div>
+</div>

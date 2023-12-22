@@ -1,0 +1,70 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_javascript %}
+{% block title %} Главная страница {% endblock %}
+
+
+{% block body %}
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+       crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+       crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+       crossorigin="anonymous">
+</script>
+
+
+
+
+<!--<div class="body_wrapper">-->
+ <div class="center">
+       <div class="row">
+                   <div class="single_news">
+                       <div class="p-4 p-md-5" >
+                               <div class="col-md-12 px-0">
+                                 <h1 class="display-4 fst-italic"> {{ article.title }}</h1>
+
+
+                                  {% if article.image_set.all %}
+                                   <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                                       <div class="carousel-inner" role="listbox" style=" width:auto; height: 300px !important;">
+                                           {% for image in article.image_set.all %}
+                                           <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}">
+                                               <img class="d-block" src="{{ image.image.url }}"
+                                                    style="margin:auto; height:300px; width:auto; border-radius:5px;">
+                                           </div>
+                                           {% endfor %}
+                                           </div>
+                                       <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                           <span class="sr-only">Previous</span>
+                                           </a>
+                                       <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                           <span class="sr-only">Next</span>
+                                       </a>
+                                   </div>
+                                   {% endif%}
+
+
+                                 <p class="lead my-3">{{ article.anouncement }}</p>
+                                 <p class="lead my-3">{{ article.text }}</p>
+                                 <p class="lead my-3">Автор: {{ article.author }}</p>
+                                 <p class="lead my-3">Теги: {% for t in article.tags.all %} {{ t.title }} {% endfor %}</p>
+                                 </div>
+                            <a class="btn btn-warning" href="{% url 'news_delete' article.pk %}">Удалить</a>
+                            <a class="btn btn-primary" href="{% url 'news_update' article.pk %}">Редактировать</a>
+                       </div>
+                   </div>
+       </div>
+ </div>
+<!--</div>-->
+{% endblock %}

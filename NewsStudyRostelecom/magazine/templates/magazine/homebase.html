@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{% block title %} Главная страница {% endblock %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/font/font-awesome.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/font/font.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/bootstrap.min.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/style.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/responsive.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'magazine/css/jquery.bxslider.css' %}" media="screen" />
+
+{% block head %}{% endblock %}
+</head>
+<body style="background-color:#202020;">
+{% include 'magazine/header.html' %}
+{% block sidebar %} {% include 'magazine/sidebar.html' %} {% endblock %}
+{% block body %} {% include 'magazine/body.html' %} {% endblock %}
+{% block foot %} {% include 'magazine/foot.html' %} {% endblock %}
+
+</body>
+</html>

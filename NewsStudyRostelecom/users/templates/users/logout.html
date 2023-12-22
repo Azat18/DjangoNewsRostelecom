@@ -1,0 +1,21 @@
+{% extends 'magazine/homebase.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+{% block title %} Вход в аккаунт {% endblock %}
+{% block slider %}{% endblock %}
+{% block body %}
+<!--<div class="body_wrapper">-->
+  <div class="center">
+        <div class="row">
+            <div class="text-center" style="margin-top:30px; background-color:#FFF;">
+                    <h1 >Вы вышли из аккаунта</h1>
+
+            <div class="border-top pt-3">
+                   <a class="ml-2" href="{% url 'login' %}">Войти снова</a>
+            </div>
+            </div>
+        </div>
+  </div>
+<!--</div>-->
+{% endblock %}
